@@ -157,7 +157,15 @@ Now that our project is set up and ready to go, let's talk about the different f
 - `tsconfig.json`: the config file for TypeScript. It defines what should be type-checked, what should be ignored, and the rules to follow
 - `tailwind.config.ts`: where you can add a custom tailwind setup. We can customize colors, sizes, shadows, plugins, etc.
 - `README.md`: Markdown file that provides details and explanations about the project
-- 
+- `postcss.config.mjs`: config file for PostCSS. A tool to process CSS files with different plugins. 
+  - In this case, it uses the TailwindCSS plugin, which allows us to use utility-first classes in our CSS files.
+- `package.json`: the file that contains all the project dependencies and scripts
+  - there's a `dev` script which starts next.js in development mode with HMR enabled, error reporting, and more
+  - `build` creates an optimized production build of your app
+  - `start` simply starts Next.js in production mode
+  - `lint` runs ESLint for all files in the project
+- `package-lock.json`: a file that contains the exact version of each dependency and their dependencies, so that everyone working on the project uses the same versions.
 
 
-@12/323
+
+@13/323
